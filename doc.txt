@@ -1,0 +1,27 @@
+do (x) times in (y) threads - выполнить задание x раз в y потоков. Всегда первой строкой!
+
+loadProxy() - загрузить прокси из proxy.txt файла
+
+createBrowser(param1, param2, param3, param4) - создать браузер.
+    param1 - прокси. Принимает: randomProxy, None
+    param2 - видно окно или нет. Принимает: True, False
+    param3 - разрешение окна. Пример: "1920,1080"
+    param4 - User Agent. Принимает: True, False
+
+findInGoogle(param1, param2) - найти ссылку по запросу в гугле.
+    param1 - Запрос, по которому искать. Пример: "Недвижимость в Харькове"
+    param2 - Зелёная ссылка, которую искать. Пример: "https://arendal.ru"
+
+wait(param1) - ожидать x секунд
+    param1 - сколько секунд ожидать. Пример: 1.75
+
+clickOnElement(param1) - нажать на элемент по его XPATH.
+    param1 - !FULL XPATH к элементу. Пример: "/html/body/div[1]/header[1]/div[2]/div[1]/div/div[1]/a[1]/img"
+
+openUrl(param1) - открыть url.
+    param1 - url сайта. Пример: "https://arendal.ru"
+
+closeBrowser() - закрыть браузер (чтобы не плодить 1000 браузеров в оперативной памяти)
+
+makeScreenshort(param1) - сделать скриншот
+    param1 - в какую директорию сохранить скриншот. Пример: makeScreenshot("C:\Screens Arendal")
